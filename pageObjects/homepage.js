@@ -1,8 +1,22 @@
-export const gotoPage = () => {
-    browser.url('/')
+"use strict"
+
+
+class HomePage {
+
+
+    gotoPage() {
+
+        browser.url('/')
+
+    }
+
+    hasLogo() {
+         
+        return browser.isExisting(".BrandLogo-img")
+    }
+
+
 }
 
-export const hasLogo = () => {
-   return browser.isVisible(".BrandLogo-img")
 
-}
+module.exports = new HomePage()
