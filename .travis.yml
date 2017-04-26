@@ -3,5 +3,7 @@ node_js:
   - "iojs"
   - "7"
   
-  'npm install'
-  'npm test'
+install:
+  - npm install
+after_success:
+-npm test
